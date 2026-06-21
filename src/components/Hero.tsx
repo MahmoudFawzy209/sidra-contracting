@@ -51,7 +51,7 @@ export default function Hero() {
           className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6"
         >
           مؤسسة <span className="text-primary-orange text-gradient">سدرة المعاني</span>
-          <br className="hidden sm:inline" />
+          <br className="hidden sm:inline" />{" "}
           للمقاولات والتشطيبات والصيانة ورفع الكفاءة
         </motion.h1>
 
