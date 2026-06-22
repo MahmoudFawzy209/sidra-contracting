@@ -48,7 +48,7 @@ export default function Services() {
       title: "العزل المائي والحراري",
       description: "حلول احترافية للعزل المائي والحراري لحماية المباني وزيادة عمرها الافتراضي.",
       features: ["عزل الأسطح من مياه الأمطار", "العزل المائي للحمامات والمطابخ", "العزل الحراري للواجهات والجدران", "معالجة الرطوبة والملوحة بالأقبية"],
-      imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Wrench className="w-6 h-6 text-primary-navy" />,
@@ -62,7 +62,7 @@ export default function Services() {
       title: "شلالات مياه ونوافير",
       description: "تصميم وتنفيذ شلالات المياه والنوافير المنزلية والخارجية بأحدث الديكورات العصرية.",
       features: ["تصميم شلالات جدارية حديثة", "تركيب نوافير مضيئة ذكية", "تنسيق مساحات مائية وحدائق", "صيانة المضخات وفلاتر المياه"],
-      imageUrl: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80",
     },
   ];
 
