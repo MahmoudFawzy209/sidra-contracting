@@ -41,28 +41,28 @@ export default function Services() {
       title: "أعمال اللياسة",
       description: "تنفيذ أعمال اللياسة الداخلية والخارجية باحترافية عالية وتجهيز الأسطح للتشطيب النهائي.",
       features: ["لياسة داخلية ناعمة", "لياسة واجهات خارجية متطابقة", "معالجة واستعدال الجدران المائلة", "تجهيز الأسطح وتأميم الزوايا"],
-      imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Layers className="w-6 h-6 text-primary-navy" />,
       title: "العزل المائي والحراري",
       description: "حلول احترافية للعزل المائي والحراري لحماية المباني وزيادة عمرها الافتراضي.",
       features: ["عزل الأسطح من مياه الأمطار", "العزل المائي للحمامات والمطابخ", "العزل الحراري للواجهات والجدران", "معالجة الرطوبة والملوحة بالأقبية"],
-      imageUrl: "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Wrench className="w-6 h-6 text-primary-navy" />,
       title: "رفع الكفاءة والترميم",
       description: "تطوير وتحسين المباني القائمة ورفع كفاءتها التشغيلية والإنشائية والجمالية.",
       features: ["ترميم وتدعيم المباني القديمة", "صيانة شاملة وتأهيل المنشآت", "إعادة تأهيل الأنظمة الميكانيكية والكهربائية", "تطوير المرافق والواجهات"],
-      imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Waves className="w-6 h-6 text-primary-navy" />,
       title: "شلالات مياه ونوافير",
       description: "تصميم وتنفيذ شلالات المياه والنوافير المنزلية والخارجية بأحدث الديكورات العصرية.",
       features: ["تصميم شلالات جدارية حديثة", "تركيب نوافير مضيئة ذكية", "تنسيق مساحات مائية وحدائق", "صيانة المضخات وفلاتر المياه"],
-      imageUrl: "https://images.unsplash.com/photo-1596130089408-f452cc7f6143?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?auto=format&fit=crop&w=600&q=80",
     },
   ];
 
