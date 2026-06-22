@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {
   Droplet,
@@ -18,6 +19,7 @@ interface ServiceItem {
   description: string;
   features: string[];
   imageUrl: string;
+  imageUrls?: string[];
 }
 
 export default function Services() {
@@ -41,28 +43,29 @@ export default function Services() {
       title: "أعمال اللياسة",
       description: "تنفيذ أعمال اللياسة الداخلية والخارجية باحترافية عالية وتجهيز الأسطح للتشطيب النهائي.",
       features: ["لياسة داخلية ناعمة", "لياسة واجهات خارجية متطابقة", "معالجة واستعدال الجدران المائلة", "تجهيز الأسطح وتأميم الزوايا"],
-      imageUrl: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "/images/plastering.png",
     },
     {
       icon: <Layers className="w-6 h-6 text-primary-navy" />,
       title: "العزل المائي والحراري",
       description: "حلول احترافية للعزل المائي والحراري لحماية المباني وزيادة عمرها الافتراضي.",
       features: ["عزل الأسطح من مياه الأمطار", "العزل المائي للحمامات والمطابخ", "العزل الحراري للواجهات والجدران", "معالجة الرطوبة والملوحة بالأقبية"],
-      imageUrl: "https://images.unsplash.com/photo-1563453392212-326f5e854473?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "/images/insulation.jpg",
     },
     {
       icon: <Wrench className="w-6 h-6 text-primary-navy" />,
       title: "رفع الكفاءة والترميم",
       description: "تطوير وتحسين المباني القائمة ورفع كفاءتها التشغيلية والإنشائية والجمالية.",
       features: ["ترميم وتدعيم المباني القديمة", "صيانة شاملة وتأهيل المنشآت", "إعادة تأهيل الأنظمة الميكانيكية والكهربائية", "تطوير المرافق والواجهات"],
-      imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "/images/renovation.png",
     },
     {
       icon: <Waves className="w-6 h-6 text-primary-navy" />,
       title: "شلالات مياه ونوافير",
       description: "تصميم وتنفيذ شلالات المياه والنوافير المنزلية والخارجية بأحدث الديكورات العصرية.",
       features: ["تصميم شلالات جدارية حديثة", "تركيب نوافير مضيئة ذكية", "تنسيق مساحات مائية وحدائق", "صيانة المضخات وفلاتر المياه"],
-      imageUrl: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "/images/waterfall1.jpg",
+      imageUrls: ["/images/waterfall1.jpg", "/images/waterfall2.jpg"],
     },
   ];
 
@@ -113,49 +116,12 @@ export default function Services() {
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {services.map((service, index) => (
-            <motion.div
+            <ServiceCard
               key={index}
-              variants={cardVariants}
-              className="bg-light-gray rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group border border-gray-100 hover:-translate-y-2"
-            >
-              {/* Card Image */}
-              <div className="relative h-48 sm:h-52 w-full overflow-hidden">
-                <Image
-                  src={service.imageUrl}
-                  alt={service.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary-navy-dark/70 to-transparent" />
-                
-                {/* Floating Icon inside Image */}
-                <div className="absolute bottom-4 right-4 bg-primary-orange p-3 rounded-xl shadow-lg flex items-center justify-center">
-                  {service.icon}
-                </div>
-              </div>
-
-              {/* Card Body */}
-              <div className="p-8 flex-grow flex flex-col text-right">
-                <h3 className="text-xl font-bold text-primary-navy mb-3 group-hover:text-primary-orange transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed mb-6">
-                  {service.description}
-                </p>
-
-                {/* Features list */}
-                <div className="mt-auto border-t border-gray-200/60 pt-5">
-                  <ul className="space-y-2">
-                    {service.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-center gap-2 justify-start text-xs sm:text-sm text-gray-700">
-                        <ChevronLeft className="w-4 h-4 text-primary-orange flex-shrink-0" />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </motion.div>
+              service={service}
+              index={index}
+              cardVariants={cardVariants}
+            />
           ))}
         </motion.div>
 
@@ -176,5 +142,101 @@ export default function Services() {
         </div>
       </div>
     </section>
+  );
+}
+
+interface ServiceCardProps {
+  service: ServiceItem;
+  index: number;
+  cardVariants: import("framer-motion").Variants;
+}
+
+function ServiceCard({ service, cardVariants }: ServiceCardProps) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = service.imageUrls || [service.imageUrl];
+  const hasMultipleImages = images.length > 1;
+
+  useEffect(() => {
+    if (!hasMultipleImages) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [hasMultipleImages, images.length]);
+
+  return (
+    <motion.div
+      variants={cardVariants}
+      className="bg-light-gray rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 flex flex-col group border border-gray-100 hover:-translate-y-2"
+    >
+      {/* Card Image */}
+      <div className="relative h-48 sm:h-52 w-full overflow-hidden">
+        {images.map((imgUrl, imgIdx) => (
+          <Image
+            key={imgUrl}
+            src={imgUrl}
+            alt={service.title}
+            fill
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            priority={imgIdx === 0}
+            className="object-cover transition-all duration-1000 ease-in-out group-hover:scale-110 absolute inset-0"
+            style={{
+              opacity: imgIdx === currentImageIndex ? 1 : 0,
+              pointerEvents: imgIdx === currentImageIndex ? "auto" : "none",
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-gradient-to-t from-primary-navy-dark/70 to-transparent pointer-events-none z-10" />
+        
+        {/* Floating Icon inside Image */}
+        <div className="absolute bottom-4 right-4 bg-primary-orange p-3 rounded-xl shadow-lg flex items-center justify-center z-20">
+          {service.icon}
+        </div>
+
+        {/* Small Slider Dots indicators */}
+        {hasMultipleImages && (
+          <div className="absolute bottom-4 left-4 flex gap-1 z-20 bg-black/40 px-2 py-1 rounded-full backdrop-blur-sm">
+            {images.map((_, imgIdx) => (
+              <button
+                key={imgIdx}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setCurrentImageIndex(imgIdx);
+                }}
+                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
+                  imgIdx === currentImageIndex ? "bg-primary-orange w-3.5" : "bg-white/60"
+                }`}
+                aria-label={`Go to slide ${imgIdx + 1}`}
+              />
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Card Body */}
+      <div className="p-8 flex-grow flex flex-col text-right">
+        <h3 className="text-xl font-bold text-primary-navy mb-3 group-hover:text-primary-orange transition-colors">
+          {service.title}
+        </h3>
+        <p className="text-sm text-gray-600 leading-relaxed mb-6">
+          {service.description}
+        </p>
+
+        {/* Features list */}
+        <div className="mt-auto border-t border-gray-200/60 pt-5">
+          <ul className="space-y-2">
+            {service.features.map((feature, fIdx) => (
+              <li key={fIdx} className="flex items-center gap-2 justify-start text-xs sm:text-sm text-gray-700">
+                <ChevronLeft className="w-4 h-4 text-primary-orange flex-shrink-0" />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </motion.div>
   );
 }
