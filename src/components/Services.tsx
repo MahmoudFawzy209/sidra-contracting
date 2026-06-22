@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import {
   Droplet,
-  Zap,
   Paintbrush,
   Hammer,
   Layers,
@@ -28,14 +27,7 @@ export default function Services() {
       title: "السباكة والصحي",
       description: "خدمات متكاملة لتأسيس وصيانة شبكات المياه والصرف الصحي للمنازل والمنشآت.",
       features: ["تأسيس شبكات المياه", "تركيب الأدوات الصحية", "إصلاح التسربات", "صيانة المواسير"],
-      imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80",
-    },
-    {
-      icon: <Zap className="w-6 h-6 text-primary-navy" />,
-      title: "الكهرباء والطاقة",
-      description: "تنفيذ وصيانة الأعمال الكهربائية وفق أعلى معايير الجودة والسلامة.",
-      features: ["تمديدات كهربائية", "تركيب الإنارة الحديثة", "صيانة الأعطال الكهربائية", "لوحات التوزيع الرئيسية"],
-      imageUrl: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Paintbrush className="w-6 h-6 text-primary-navy" />,
@@ -49,7 +41,7 @@ export default function Services() {
       title: "أعمال اللياسة",
       description: "تنفيذ أعمال اللياسة الداخلية والخارجية باحترافية عالية وتجهيز الأسطح للتشطيب النهائي.",
       features: ["لياسة داخلية ناعمة", "لياسة واجهات خارجية متطابقة", "معالجة واستعدال الجدران المائلة", "تجهيز الأسطح وتأميم الزوايا"],
-      imageUrl: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Layers className="w-6 h-6 text-primary-navy" />,
@@ -63,14 +55,14 @@ export default function Services() {
       title: "رفع الكفاءة والترميم",
       description: "تطوير وتحسين المباني القائمة ورفع كفاءتها التشغيلية والإنشائية والجمالية.",
       features: ["ترميم وتدعيم المباني القديمة", "صيانة شاملة وتأهيل المنشآت", "إعادة تأهيل الأنظمة الميكانيكية والكهربائية", "تطوير المرافق والواجهات"],
-      imageUrl: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80",
     },
     {
       icon: <Waves className="w-6 h-6 text-primary-navy" />,
       title: "شلالات مياه ونوافير",
       description: "تصميم وتنفيذ شلالات المياه والنوافير المنزلية والخارجية بأحدث الديكورات العصرية.",
       features: ["تصميم شلالات جدارية حديثة", "تركيب نوافير مضيئة ذكية", "تنسيق مساحات مائية وحدائق", "صيانة المضخات وفلاتر المياه"],
-      imageUrl: "https://images.unsplash.com/photo-1508873535684-277a3cbcc4e8?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "https://images.unsplash.com/photo-1596130089408-f452cc7f6143?auto=format&fit=crop&w=600&q=80",
     },
   ];
 

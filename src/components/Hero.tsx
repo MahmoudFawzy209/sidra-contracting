@@ -63,7 +63,7 @@ export default function Hero() {
           className="text-base sm:text-lg md:text-xl text-gray-200 font-semibold mb-6 max-w-4xl mx-auto leading-relaxed"
         >
           <span className="text-primary-orange font-bold text-lg sm:text-xl mt-2 block">
-            سباكة - كهرباء - لياسة - سيراميك - عوازل - نقاشة - شلالات مياه - نوافير
+            سباكة - لياسة - سيراميك - عوازل - نقاشة - شلالات مياه - نوافير
           </span>
         </motion.h2>
 

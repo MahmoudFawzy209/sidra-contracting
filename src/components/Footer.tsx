@@ -63,7 +63,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-sm text-gray-400">
               <li>سباكة وصرف صحي</li>
-              <li>تمديدات كهربائية</li>
               <li>لياسة وتجهيز حوائط</li>
               <li>عزل مائي وحراري</li>
               <li>دهانات وتشطيبات</li>
