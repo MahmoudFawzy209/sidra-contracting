@@ -103,6 +103,35 @@ export default function Footer() {
 
         </div>
 
+        {/* Local Services Directory for SEO (Tag Cloud) */}
+        <div className="border-t border-white/5 pt-12 pb-4 text-right">
+          <h4 className="text-white font-extrabold text-sm mb-4 border-r-2 border-primary-orange pr-3">
+            دليل الخدمات الشائعة بالمنطقة الشرقية
+          </h4>
+          <div className="flex flex-wrap gap-2 text-xs text-gray-400 leading-loose">
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">سباك بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">معلم سباكه</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">فنى سباكه</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">تأسيس سباكه وتشطيب بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">عزل بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">عوازل بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">معلم عوازل حمامات بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">معلم نوافير و شلالات بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">لياس بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">نقاش بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مقاول سباكه</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مقاول عوازل بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مقاول لياسه بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مقاول نقاشه بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مقاول نوافير وشلالات بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">سباك صيانه بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">صيانه منازل بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مؤسسه سباكه وتشطيبات بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مؤسسه عوازل بالدمام</a>
+            <a href="#services" className="bg-white/5 hover:bg-primary-orange/10 hover:text-white px-2.5 py-1 rounded-md border border-white/5 transition-colors">مؤسسه تشطيبات بالدمام</a>
+          </div>
+        </div>
+
         {/* Footer Bottom (Border Line + Copyrights + Back to Top) */}
         <div className="border-t border-white/10 pt-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
           <div className="text-xs text-gray-500 font-semibold">
