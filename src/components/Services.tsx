@@ -29,7 +29,7 @@ export default function Services() {
       title: "السباكة والصحي",
       description: "خدمات تأسيس وصيانة شبكات المياه والصرف الصحي، نوفر لكم أفضل سباك بالدمام وفني سباكه محترف لتشطيب وصيانة منازل بالدمام.",
       features: ["تأسيس شبكات المياه", "تركيب الأدوات الصحية", "إصلاح التسربات", "صيانة المواسير"],
-      imageUrl: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=600&q=80",
+      imageUrl: "/images/plumbing.png",
     },
     {
       icon: <Paintbrush className="w-6 h-6 text-primary-navy" />,
