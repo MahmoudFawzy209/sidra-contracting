@@ -50,9 +50,9 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white leading-tight mb-6"
         >
-          مؤسسة <span className="text-primary-orange text-gradient">سدرة المعاني</span>
+          مؤسسة <span className="text-primary-orange text-gradient">سدرا المعاني</span>
           <br className="hidden sm:inline" />{" "}
-          للمقاولات والتشطيبات والصيانة ورفع الكفاءة
+          سباك.. وتشطيبات وشلالات مياه  ونوافير منزليه  وعزل  ولياسه ونقاشه وصيانه منازل ورفع كفائه
         </motion.h1>
 
         {/* Subtitle */}
