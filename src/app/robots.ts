@@ -4,9 +4,10 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
-      disallow: ["/api/", "/_next/"],
+      allow: ["/", "/_next/static/", "/_next/image/"],
+      disallow: ["/api/", "/_next/data/"],
     },
     sitemap: "https://sedra-almaani.com/sitemap.xml",
   };
 }
+
