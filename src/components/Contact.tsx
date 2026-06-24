@@ -156,7 +156,7 @@ export default function Contact() {
                   <div>
                     <h4 className="font-extrabold text-lg mb-2 text-green-950">تم إرسال طلبك بنجاح!</h4>
                     <p className="text-sm text-green-700 leading-relaxed">
-                      شكراً لتواصلك مع مؤسسة سدرا المعاني. سيقوم مهندسنا الفني بمراجعة طلبك والاتصال بك هاتفياً خلال 24 ساعة كحد أقصى.
+                      شكراً لتواصلك مع سدرا المعاني. سيقوم مهندسنا الفني بمراجعة طلبك والاتصال بك هاتفياً خلال 24 ساعة كحد أقصى.
                     </p>
                   </div>
                   <button
