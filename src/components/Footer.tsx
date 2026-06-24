@@ -24,7 +24,7 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-6">
             <div>
               <span className="text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
-                <span className="text-primary-orange">سدرة</span> المعاني
+                <span className="text-primary-orange">سدرا</span> المعاني
               </span>
               <p className="text-xs text-gray-400 mt-1 font-semibold">
                 للمقاولات والتشطيبات والصيانة ورفع الكفاءة
@@ -106,7 +106,7 @@ export default function Footer() {
         {/* Footer Bottom (Border Line + Copyrights + Back to Top) */}
         <div className="border-t border-white/10 pt-8 flex flex-col-reverse sm:flex-row items-center justify-between gap-4">
           <div className="text-xs text-gray-500 font-semibold">
-            &copy; {new Date().getFullYear()} مؤسسة سدرة المعاني للمقاولات والتشطيبات والصيانة. جميع الحقوق محفوظة.
+            &copy; {new Date().getFullYear()} مؤسسة سدرا المعاني للمقاولات والتشطيبات والصيانة. جميع الحقوق محفوظة.
           </div>
 
           {/* Back to top button */}

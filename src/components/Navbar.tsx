@@ -41,7 +41,7 @@ export default function Navbar() {
           <div className="flex-shrink-0 flex items-center">
             <a href="#home" className="flex flex-col items-start select-none">
               <span className="text-xl sm:text-2xl font-extrabold tracking-tight text-white flex items-center gap-2">
-                <span className="text-primary-orange">سدرة</span> المعاني
+                <span className="text-primary-orange">سدرا</span> المعاني
               </span>
               <span className="text-[10px] text-gray-300 font-medium tracking-wide">
                 للمقاولات والتشطيبات والصيانة

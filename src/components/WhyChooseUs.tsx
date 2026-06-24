@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
         <div className="text-center max-w-3xl mx-auto mb-20">
           <span className="text-primary-orange font-bold text-lg mb-2 block">لماذا تختارنا</span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-            لماذا يفضل العملاء التعامل مع سدرة المعاني؟
+            لماذا يفضل العملاء التعامل مع سدرا المعاني؟
           </h2>
           <div className="w-20 h-1.5 bg-primary-orange mx-auto rounded-full mb-6" />
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
